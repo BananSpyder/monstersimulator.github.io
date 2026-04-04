@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Monster Simulator</title>
+<style>
+  .monster {
+    background-color: #F5EFE6;
+    border: none;
+    border-radius: 10px;
+    padding: 40px; 80px; 40px;
+    text-align: center;
+    color: #5F7161;
+    font: "Open Sans", sans-serif, bold;
+    cursor: pointer;
+  }
+  .monster:hover{
+    background-color: #E8DFCA;
+  }
+  .centration{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } 
+  .smallcentration{
+     text-align:center;
+  }
+  .boxy1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 480px;
+      border: none; 
+   }
+   .cord{
+      animation-name: rotate;
+      animation duration: 8s infinite;
+   }
+   @keyFrames rotate{
+     0%{rotate: -30deg}
+     50%{rotate: 30deg}
+     100%{rotate: -30deg}
+</style>
+</head>
+<body>
+<audio src="Claire de Lune.mp3" autoplay loop></audio>.
+<div class = "boxy1"><div class = "cord"><h1> Monster Simulator :D </h1> </div></div>
+<div class = "centration"><button class = "monster"> <b>Spawn Monster</b> </button></div>
+</body>
+</html>
